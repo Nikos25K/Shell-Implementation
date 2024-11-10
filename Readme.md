@@ -13,7 +13,26 @@ In this project, we are tasked with creating a simple shell that uses various co
 - Background execution
 - Ctrl-C and Ctrl-Z signal management
 
+## Table of Contents
 
+- [Components](#components)
+- [Compilation and Execution](#compilation-and-execution)
+- [Actions and How It Works](#actions-and-how-it-works)
+- [Example Workflow](#example-workflow)
+
+
+
+## Components
+
+- **Main Program (`main.c`)**: Initializes the shell, sets up signal handling, and enters a loop to read and execute commands.
+- **History Management (`history.c`)**: Manages the history of executed commands.
+- **Signal Handling (`signals.c`)**: Handles signals like SIGINT and SIGTSTP.
+- **Utility Functions (`utils.c`)**: Provides utility functions like string duplication, memory allocation checks, and command parsing.
+- **Alias Management (`aliases.c`)**: Manages command aliases.
+- **Command Execution (`execute.c`)**: Executes commands, including custom commands and pipelines.
+- **Simple Commands (`simple_commands.c`)**: Implements simple built-in commands like `cd` and `ver`.
+- **Wildcard Expansion (`wildcards.c`)**: Expands wildcards in command arguments.
+- **Redirection (`redirect.c`)**: Handles input and output redirection.
 
 ## Compilation and Execution
 
@@ -40,18 +59,6 @@ For more information on available targets, you can use:
 ```sh
 make help
 ```
-
-## Components
-
-- **Main Program (`main.c`)**: Initializes the shell, sets up signal handling, and enters a loop to read and execute commands.
-- **History Management (`history.c`)**: Manages the history of executed commands.
-- **Signal Handling (`signals.c`)**: Handles signals like SIGINT and SIGTSTP.
-- **Utility Functions (`utils.c`)**: Provides utility functions like string duplication, memory allocation checks, and command parsing.
-- **Alias Management (`aliases.c`)**: Manages command aliases.
-- **Command Execution (`execute.c`)**: Executes commands, including custom commands and pipelines.
-- **Simple Commands (`simple_commands.c`)**: Implements simple built-in commands like `cd` and `ver`.
-- **Wildcard Expansion (`wildcards.c`)**: Expands wildcards in command arguments.
-- **Redirection (`redirect.c`)**: Handles input and output redirection.
 
 ## Actions and How It Works
 
