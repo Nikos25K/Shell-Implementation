@@ -1,0 +1,6 @@
+# Ignore the .vscode folder
+.vscode
+
+# Ignore those inside the folder bin and build
+bin/*
+build/*
