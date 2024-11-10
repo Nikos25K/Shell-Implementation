@@ -1,4 +1,4 @@
-# Simple Shell Implementation
+# Shell Implementation
 
 ## Introduction
 
